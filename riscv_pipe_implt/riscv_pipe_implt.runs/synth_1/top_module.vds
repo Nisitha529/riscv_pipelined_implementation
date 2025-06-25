@@ -1,0 +1,360 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jun 25 14:57:23 2025
+# Process ID: 159146
+# Current directory: /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/synth_1
+# Command line: vivado -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
+# Log file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/synth_1/top_module.vds
+# Journal file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/synth_1/vivado.jou
+# Running On: nisitha-laptop, OS: Linux, CPU Frequency: 3586.671 MHz, CPU Physical cores: 4, Host memory: 16471 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1346.086 ; gain = 0.023 ; free physical = 330 ; free virtual = 8660
+Command: synth_design -top top_module -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 159275
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1820.582 ; gain = 416.684 ; free physical = 190 ; free virtual = 7938
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'aluresult' is not allowed [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/alu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
+INFO: [Synth 8-6157] synthesizing module 'riscv_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:8]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/maindec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/maindec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'aludec' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/aludec.v:1]
+INFO: [Synth 8-226] default block is never used [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/aludec.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'aludec' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/aludec.v:1]
+INFO: [Synth 8-6157] synthesizing module 'c_id_iex' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/c_id_iex.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'c_id_iex' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/c_id_iex.v:1]
+INFO: [Synth 8-6157] synthesizing module 'c_iex_im' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/c_iex_im.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'c_iex_im' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/c_iex_im.v:1]
+INFO: [Synth 8-6157] synthesizing module 'c_im_iw' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/c_im_iw.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'c_im_iw' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/c_im_iw.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hazardunit' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/hazardunit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'hazardunit' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/hazardunit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/mux2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/flopenr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/flopenr.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/adder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/if_id.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/if_id.v:1]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/regfile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/regfile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'extend' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/extend.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/extend.v:1]
+INFO: [Synth 8-6157] synthesizing module 'id_iex' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/id_iex.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'id_iex' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/id_iex.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/mux3.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/mux3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'iex_imem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/iex_imem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'iex_imem' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/iex_imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'imem_iw' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem_iw.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'imem_iw' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem_iw.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/datapath.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_module' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:8]
+INFO: [Synth 8-6157] synthesizing module 'imem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/dmem.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
+WARNING: [Synth 8-7129] Port a[31] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module dmem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module extend is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module extend is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1898.551 ; gain = 494.652 ; free physical = 221 ; free virtual = 7848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1916.363 ; gain = 512.465 ; free physical = 226 ; free virtual = 7844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1924.367 ; gain = 520.469 ; free physical = 231 ; free virtual = 7849
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1948.391 ; gain = 544.492 ; free physical = 192 ; free virtual = 7815
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 4     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 15    
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 22    
+	  10 Input   32 Bit        Muxes := 1     
+	  11 Input   14 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2114.953 ; gain = 711.055 ; free physical = 305 ; free virtual = 7623
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|imem        | ram        | 128x8         | LUT            | 
+|imem        | ram        | 128x8         | LUT            | 
+|imem        | ram        | 128x8         | LUT            | 
+|imem        | ram        | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|top_module  | rv/datapath_01/u_rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|top_module  | dmem_inst/ram_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 314 ; free virtual = 7629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------------------+-----------+----------------------+----------------+
+|top_module  | rv/datapath_01/u_rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
+|top_module  | dmem_inst/ram_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
++------------+----------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 329 ; free virtual = 7630
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    36|
+|3     |LUT1     |     8|
+|4     |LUT2     |   175|
+|5     |LUT3     |   128|
+|6     |LUT4     |   121|
+|7     |LUT5     |   244|
+|8     |LUT6     |   419|
+|9     |MUXF7    |     1|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |RAM64X1S |    32|
+|13    |FDCE     |   509|
+|14    |IBUF     |     2|
+|15    |OBUF     |    65|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+-------------+------+
+|      |Instance            |Module       |Cells |
++------+--------------------+-------------+------+
+|1     |top                 |             |  1755|
+|2     |  dmem_inst         |dmem         |    32|
+|3     |  rv                |riscv_module |  1654|
+|4     |    controller_01   |controller   |    61|
+|5     |      pipreg_d_to_e |c_id_iex     |    54|
+|6     |      pipreg_e_to_m |c_iex_im     |     4|
+|7     |      pipreg_m_to_w |c_im_iw      |     3|
+|8     |    datapath_01     |datapath     |  1593|
+|9     |      u_alu         |alu          |    12|
+|10    |      u_id_iex      |id_iex       |   801|
+|11    |      u_iex_imem    |iex_imem     |   104|
+|12    |      u_if          |flopenr      |   173|
+|13    |      u_if_id       |if_id        |   220|
+|14    |      u_imem_iw     |imem_iw      |   150|
+|15    |      u_pcadd4      |adder        |    36|
+|16    |      u_pcaddbranch |adder_0      |    19|
+|17    |      u_rf          |regfile      |    78|
++------+--------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.930 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2120.891 ; gain = 0.000 ; free physical = 861 ; free virtual = 8147
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2209.699 ; gain = 0.000 ; free physical = 825 ; free virtual = 8112
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: eef24d8f
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2209.734 ; gain = 829.648 ; free physical = 828 ; free virtual = 8115
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1779.385; main = 1480.268; forked = 376.986
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3114.547; main = 2209.703; forked = 996.621
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2233.711 ; gain = 0.000 ; free physical = 828 ; free virtual = 8115
+INFO: [Common 17-1381] The checkpoint '/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/synth_1/top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 25 14:58:50 2025...

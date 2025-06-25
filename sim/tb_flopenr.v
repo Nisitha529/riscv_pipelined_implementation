@@ -1,0 +1,65 @@
+`timescale 1ns/1ps
+
+module tb_flopenr;
+
+  reg         clk;
+  reg         reset;
+  reg         en;
+  reg  [31:0] d;
+  wire [31:0] q;
+
+  flopenr dut (
+    .clk   (clk),
+    .reset (reset),
+    .en    (en),
+    .d     (d),
+    .q     (q)
+  );
+
+  task check_output(
+    input [127:0] label,
+    input [31:0]  expected
+  );
+  begin
+    #1;
+    $display("[%0t] %-15s | Expected: %08x | Actual: %08x | %s",
+             $time, label, expected, q,
+             (q === expected) ? "PASS" : "FAIL");
+  end
+  endtask
+
+  initial begin
+    $display("Running flopenr test...\n");
+
+    clk = 0;
+    forever #5 clk = ~clk;
+  end
+
+  initial begin
+    reset = 1; en = 0; d = 32'h00000000;
+    #12;   reset = 0;
+
+    // Test 1: Write A5A5A5A5 (setup before clock edge)
+    #3; en = 1; d = 32'hA5A5A5A5;  // Set at 15ns (clock low)
+    #20;
+    #7; check_output("Write A5A5", 32'hA5A5A5A5);  // Check at 22ns
+
+    // Test 2: Hold (disable enable - setup before clock edge)
+    #8; en = 0; d = 32'hFFFFFFFF;  // Set at 30ns (clock low)
+    #20;
+    #7; check_output("Hold A5A5", 32'hA5A5A5A5);  // Check at 37ns
+
+    // Test 3: Write 12345678 (setup before clock edge)
+    #8; en = 1; d = 32'h12345678;  // Set at 45ns (clock edge - FIXED to 48ns)
+    #20;
+    #7; check_output("Write 1234", 32'h12345678);  // Check at 55ns    
+
+    // Test 4: Reset
+    #10; reset = 1;  // Set reset at 65ns
+    #10; check_output("Reset", 32'h00000000);  // Check at 75ns
+
+    $display("\nTest complete.");
+    $finish;
+  end
+
+endmodule

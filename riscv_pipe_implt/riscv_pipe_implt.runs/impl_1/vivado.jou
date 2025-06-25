@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Jun 25 15:01:16 2025
+# Process ID: 159978
+# Current directory: /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/impl_1
+# Command line: vivado -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/impl_1/top_module.vdi
+# Journal file: /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/impl_1/vivado.jou
+# Running On: nisitha-laptop, OS: Linux, CPU Frequency: 1799.993 MHz, CPU Physical cores: 4, Host memory: 16471 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace
