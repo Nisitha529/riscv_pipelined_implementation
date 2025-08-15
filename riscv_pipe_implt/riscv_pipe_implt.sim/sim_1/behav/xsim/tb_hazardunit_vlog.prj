@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../riscv_pipe_implt.srcs/sources_1/new/hazardunit.sv" \
+
+verilog xil_defaultlib  \
+"../../../../riscv_pipe_implt.srcs/sim_1/new/tb_hazardunit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

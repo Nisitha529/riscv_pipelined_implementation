@@ -27,7 +27,7 @@ module maindec(
     case (op)
       7'b0000011: controls = 14'b1_000_0_01_0_01_0_00_0; // lw
       7'b0100011: controls = 14'b0_001_0_01_1_00_0_00_0; // sw
-      7'b0110011: controls = 14'b1_000_0_00_0_00_0_10_0; // r-type
+      7'b0110011: controls = 14'b1_xxx_0_00_0_00_0_10_0; // r-type
       7'b1100011: controls = 14'b0_010_0_00_0_00_1_01_0; // b-type
       7'b0010011: controls = 14'b1_000_0_01_0_00_0_10_0; // i-type
       7'b1101111: controls = 14'b1_011_0_00_0_10_0_00_1; // jal
@@ -35,7 +35,7 @@ module maindec(
       7'b0110111: controls = 14'b1_100_1_01_0_00_0_00_0; // lui
       7'b1100111: controls = 14'b1_000_0_01_0_10_0_00_1; // jalr
       7'b0000000: controls = 14'b0_000_0_00_0_00_0_00_0; // nop / reset
-      default:    controls = 14'b0_000_0_00_0_00_0_00_0; // fallback safe
+      default:    controls = 14'bx_xxx_x_xx_x_xx_x_xx_x; // fallback safe
     endcase
   end
 

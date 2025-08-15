@@ -35,6 +35,7 @@ module datapath(
   wire [31:0] pcd, pce, aluresulte, aluresultw, readdataw;
   wire [31:0] pcnextf, pcplus4f, pcplus4d, pcplus4e, pcplus4m, pcplus4w;
   wire [31:0] pctargete, branjumptargete;
+  wire        pcjalsrcm;
   wire [31:0] writedatae, immextd, immexte;
   wire [31:0] srcaefor, srcae, srcbe;
   wire [31:0] rd1d, rd2d, rd1e, rd2e;
@@ -45,7 +46,7 @@ module datapath(
   mux2 u_jal_r(
     .d0       (pctargete),
     .d1       (aluresulte),
-    .s        (pcjalsrce),
+    .s        (pcjalsrcm),
     .y        (branjumptargete)
   );
 
@@ -178,6 +179,7 @@ module datapath(
   iex_imem u_iex_imem(
     .clk         (clk),
     .reset       (reset),
+    .pcjalsrce   (pcjalsrce),
     .aluresulte  (aluresulte),
     .writedatae  (writedatae),
     .rde         (rde),
@@ -185,7 +187,8 @@ module datapath(
     .aluresulm   (aluresultm),
     .writedatm   (writedatam),
     .rdm         (rdm),
-    .pcplus4m    (pcplus4m)
+    .pcplus4m    (pcplus4m),
+    .pcjalsrcm   (pcjalsrcm)
   );
 
   // mem-wb

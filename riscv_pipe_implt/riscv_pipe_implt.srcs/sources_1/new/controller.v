@@ -2,7 +2,7 @@ module controller(
   input        clk,
   input        reset,
   input  [6:0] op,
-  input  [2:0] funct3,
+  input  [2:0] funct3d,
   input        funct7b5,
   input        zeroe,
   input        signe,
@@ -27,6 +27,7 @@ module controller(
   wire       alusrcad, regwrited, regwritee;
   wire [1:0] alusrcbd;
   wire       zeroop, signop, branchop;
+  wire [2:0] funct3e;
 
   maindec md (
     .op         (op),
@@ -43,7 +44,7 @@ module controller(
 
   aludec ad (
     .opb5       (op[5]),
-    .funct3     (funct3),
+    .funct3     (funct3d),
     .funct7b5   (funct7b5),
     .aluop      (aluopd),
     .alucontrol (alucontrold)
@@ -61,6 +62,7 @@ module controller(
     .alusrcbd    (alusrcbd),
     .resultsrcd  (resultsrcd),
     .alucontrold (alucontrold),
+    .funct3d     (funct3d), 
     .regwritee   (regwritee),
     .memwritee   (memwritee),
     .jumpe       (jumpe),
@@ -68,7 +70,8 @@ module controller(
     .alusrcae    (alusrcae),
     .alusrcbe    (alusrcbe),
     .resultsrce  (resultsrce),
-    .alucontrole (alucontrole)
+    .alucontrole (alucontrole),
+    .funct3e     (funct3e) 
   );
 
   c_iex_im pipreg_e_to_m (
@@ -92,9 +95,9 @@ module controller(
   );
 
   assign resultsrce0  = resultsrce[0];
-  assign zeroop       = zeroe ^ funct3[0];
-  assign signop       = signe ^ funct3[0];
-  assign branchop     = funct3[2] ? signop : zeroop;
+  assign zeroop       = zeroe ^ funct3e[0];
+  assign signop       = signe ^ funct3e[0];
+  assign branchop     = funct3e[2] ? signop : zeroop;
   assign pcsrce       = (branche & branchop) | jumpe;
   assign pcjalsrce    = (op == 7'b1100111) ? 1'b1 : 1'b0;
 

@@ -18,13 +18,13 @@ module if_id(
       pcplus4d   <= 0;
     end else if (enable) begin
       if (clear) begin
-        instrd     <= 0;
-        pcd        <= 0;
-        pcplus4d   <= 0;
+        instrd   <= 0;
+        pcd      <= 0;
+        pcplus4d <= 0;
       end else begin
-        instrd     <= instrf;
-        pcd        <= pcf;
-        pcplus4d   <= pcplus4f;
+        instrd   <= instrf;
+        pcd      <= pcf;
+        pcplus4d <= pcplus4f;
       end
     end
   end

@@ -6,7 +6,7 @@ module aludec(
   output [3:0]   alucontrol
 );
 
-  wire rtypesub;
+  wire       rtypesub;
   reg  [3:0] alucontrol_reg;
 
   assign rtypesub   = funct7b5 & opb5;

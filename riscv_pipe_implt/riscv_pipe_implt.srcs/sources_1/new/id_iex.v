@@ -21,15 +21,25 @@ module id_iex(
 );
 
   always @(posedge clk or posedge reset) begin
-    if (reset || clear) begin
-      rd1e      <= 32'b0;
-      rd2e      <= 32'b0;
-      pce       <= 32'b0;
-      rs1e      <= 5'b0;
-      rs2e      <= 5'b0;
-      rde       <= 5'b0;
-      immexte   <= 32'b0;
-      pcplus4e  <= 32'b0;
+    if (reset) begin
+      rd1e      <= 0;
+      rd2e      <= 0;
+      pce       <= 0;
+      rs1e      <= 0;
+      rs2e      <= 0;
+      rde       <= 0;
+      immexte   <= 0;
+      pcplus4e  <= 0;
+    end
+    else if (clear) begin
+      rd1e      <= 0;
+      rd2e      <= 0;
+      pce       <= 0;
+      rs1e      <= 0;
+      rs2e      <= 0;
+      rde       <= 0;
+      immexte   <= 0;
+      pcplus4e  <= 0;
     end
     else begin
       rd1e      <= rd1d;

@@ -1,13 +1,6 @@
-/*
-  Name: RISC V RV32I
-  Description: Implements 27 instructions
-               5 stage pipeline
-               Hazard Unit is present for handling both control and data hazards
-*/
-
 module riscv_module(
-  input  clk,
-  input  reset,
+  input         clk,
+  input         reset,
   output [31:0] pcf,
   input  [31:0] instrf,
   output        memwritem,
@@ -41,7 +34,7 @@ module riscv_module(
     .clk           (clk),
     .reset         (reset),
     .op            (instrd[6:0]),
-    .funct3        (instrd[14:12]),
+    .funct3d       (instrd[14:12]),
     .funct7b5      (instrd[30]),
     .zeroe         (zeroe),
     .signe         (signe),
@@ -55,7 +48,7 @@ module riscv_module(
     .alusrcbe      (alusrcbe),
     .regwritem     (regwritem),
     .regwritew     (regwritew),
-    .immsrcd        (immsrcd),
+    .immsrcd       (immsrcd),
     .alucontrole   (alucontrole)
   );
 

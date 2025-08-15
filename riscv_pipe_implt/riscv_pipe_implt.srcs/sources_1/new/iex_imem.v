@@ -1,6 +1,7 @@
 module iex_imem(
   input             clk,
   input             reset,
+  input             pcjalsrce,
   input      [31:0] aluresulte,
   input      [31:0] writedatae,
   input      [4:0]  rde,
@@ -8,7 +9,8 @@ module iex_imem(
   output reg [31:0] aluresulm,
   output reg [31:0] writedatm,
   output reg [4:0]  rdm,
-  output reg [31:0] pcplus4m
+  output reg [31:0] pcplus4m,
+  output reg        pcjalsrcm
 );
 
   always @(posedge clk or posedge reset) begin
@@ -17,11 +19,13 @@ module iex_imem(
       writedatm   <= 0;
       rdm         <= 0;
       pcplus4m    <= 0;
+      pcjalsrcm   <= 0;
     end else begin
       aluresulm   <= aluresulte;
       writedatm   <= writedatae;
       rdm         <= rde;
       pcplus4m    <= pcplus4e;
+      pcjalsrcm   <= pcjalsrce;
     end
   end
 

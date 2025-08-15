@@ -11,20 +11,24 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top_module.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1346.086 ; gain = 0.023 ; free physical = 330 ; free virtual = 8660
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1370.262 ; gain = 0.023 ; free physical = 1499 ; free virtual = 8780
+Command: read_checkpoint -auto_incremental -incremental /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_module -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 159275
+INFO: [Synth 8-7075] Helper process launched with PID 137054
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1820.582 ; gain = 416.684 ; free physical = 190 ; free virtual = 7938
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1823.578 ; gain = 407.629 ; free physical = 889 ; free virtual = 8160
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-11121] redeclaration of ANSI port 'aluresult' is not allowed [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/alu.v:10]
 INFO: [Synth 8-6157] synthesizing module 'top_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-INFO: [Synth 8-6157] synthesizing module 'riscv_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:8]
+INFO: [Synth 8-6157] synthesizing module 'riscv_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:1]
 INFO: [Synth 8-6157] synthesizing module 'controller' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/controller.v:1]
 INFO: [Synth 8-6157] synthesizing module 'maindec' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/maindec.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/maindec.v:1]
@@ -64,7 +68,7 @@ INFO: [Synth 8-6155] done synthesizing module 'iex_imem' (0#1) [/media/nisitha/M
 INFO: [Synth 8-6157] synthesizing module 'imem_iw' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem_iw.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'imem_iw' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem_iw.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/datapath.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'riscv_module' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_module' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:1]
 INFO: [Synth 8-6157] synthesizing module 'imem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:1]
 INFO: [Synth 8-6157] synthesizing module 'dmem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/dmem.v:1]
@@ -104,21 +108,21 @@ WARNING: [Synth 8-7129] Port instr[2] in module extend is either unconnected or 
 WARNING: [Synth 8-7129] Port instr[1] in module extend is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instr[0] in module extend is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1898.551 ; gain = 494.652 ; free physical = 221 ; free virtual = 7848
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1900.547 ; gain = 484.598 ; free physical = 788 ; free virtual = 8081
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1916.363 ; gain = 512.465 ; free physical = 226 ; free virtual = 7844
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1918.359 ; gain = 502.410 ; free physical = 796 ; free virtual = 8091
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1924.367 ; gain = 520.469 ; free physical = 231 ; free virtual = 7849
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1948.391 ; gain = 544.492 ; free physical = 192 ; free virtual = 7815
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1926.363 ; gain = 510.414 ; free physical = 796 ; free virtual = 8091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1951.285 ; gain = 535.336 ; free physical = 770 ; free virtual = 8071
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -137,15 +141,17 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 15    
 	                5 Bit    Registers := 5     
 	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 9     
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 22    
 	  10 Input   32 Bit        Muxes := 1     
-	  11 Input   14 Bit        Muxes := 1     
+	  11 Input   11 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 3     
 	   9 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 4     
 	   2 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -166,7 +172,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 2114.953 ; gain = 711.055 ; free physical = 305 ; free virtual = 7623
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2115.848 ; gain = 699.898 ; free physical = 587 ; free virtual = 7924
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -183,16 +189,25 @@ ROM: Preliminary Mapping Report
 |top_module  | p_0_out    | 128x8         | LUT            | 
 |top_module  | p_0_out    | 128x8         | LUT            | 
 |top_module  | p_0_out    | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
 +------------+------------+---------------+----------------+
 
 
+Block RAM: Preliminary Mapping Report (see note below)
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top_module  | dmem_inst/ram_reg | 64 x 32(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
 Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+----------------------------+-----------+----------------------+----------------+
-|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
-+------------+----------------------------+-----------+----------------------+----------------+
-|top_module  | rv/datapath_01/u_rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
-|top_module  | dmem_inst/ram_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
-+------------+----------------------------+-----------+----------------------+----------------+
++------------+----------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------+-----------+----------------------+--------------+
+|top_module  | rv/datapath_01/u_rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+----------------------------+-----------+----------------------+--------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -203,19 +218,26 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 314 ; free virtual = 7629
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 572 ; free virtual = 7894
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
+Block RAM: Final Mapping Report
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object        | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top_module  | dmem_inst/ram_reg | 64 x 32(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
 Distributed RAM: Final Mapping Report
-+------------+----------------------------+-----------+----------------------+----------------+
-|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives     | 
-+------------+----------------------------+-----------+----------------------+----------------+
-|top_module  | rv/datapath_01/u_rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12    | 
-|top_module  | dmem_inst/ram_reg          | Implied   | 64 x 32              | RAM64X1S x 32  | 
-+------------+----------------------------+-----------+----------------------+----------------+
++------------+----------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------+-----------+----------------------+--------------+
+|top_module  | rv/datapath_01/u_rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+----------------------------+-----------+----------------------+--------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -223,8 +245,10 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dmem_inst/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dmem_inst/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:49 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 329 ; free virtual = 7630
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 577 ; free virtual = 7899
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -242,37 +266,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -290,70 +314,68 @@ Report Cell Usage:
 +------+---------+------+
 |1     |BUFG     |     1|
 |2     |CARRY4   |    36|
-|3     |LUT1     |     8|
-|4     |LUT2     |   175|
-|5     |LUT3     |   128|
-|6     |LUT4     |   121|
-|7     |LUT5     |   244|
-|8     |LUT6     |   419|
-|9     |MUXF7    |     1|
-|10    |RAM32M   |    10|
-|11    |RAM32X1D |     4|
-|12    |RAM64X1S |    32|
-|13    |FDCE     |   509|
-|14    |IBUF     |     2|
-|15    |OBUF     |    65|
+|3     |LUT1     |     3|
+|4     |LUT2     |   195|
+|5     |LUT3     |   127|
+|6     |LUT4     |   114|
+|7     |LUT5     |   189|
+|8     |LUT6     |   465|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |   487|
+|13    |IBUF     |     2|
+|14    |OBUF     |    65|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+--------------------+-------------+------+
 |      |Instance            |Module       |Cells |
 +------+--------------------+-------------+------+
-|1     |top                 |             |  1755|
-|2     |  dmem_inst         |dmem         |    32|
-|3     |  rv                |riscv_module |  1654|
-|4     |    controller_01   |controller   |    61|
-|5     |      pipreg_d_to_e |c_id_iex     |    54|
+|1     |top                 |             |  1699|
+|2     |  dmem_inst         |dmem         |     2|
+|3     |  rv                |riscv_module |  1628|
+|4     |    controller_01   |controller   |   103|
+|5     |      pipreg_d_to_e |c_id_iex     |    92|
 |6     |      pipreg_e_to_m |c_iex_im     |     4|
-|7     |      pipreg_m_to_w |c_im_iw      |     3|
-|8     |    datapath_01     |datapath     |  1593|
+|7     |      pipreg_m_to_w |c_im_iw      |     7|
+|8     |    datapath_01     |datapath     |  1525|
 |9     |      u_alu         |alu          |    12|
-|10    |      u_id_iex      |id_iex       |   801|
-|11    |      u_iex_imem    |iex_imem     |   104|
-|12    |      u_if          |flopenr      |   173|
-|13    |      u_if_id       |if_id        |   220|
-|14    |      u_imem_iw     |imem_iw      |   150|
+|10    |      u_id_iex      |id_iex       |   769|
+|11    |      u_iex_imem    |iex_imem     |   117|
+|12    |      u_if          |flopenr      |   179|
+|13    |      u_if_id       |if_id        |   216|
+|14    |      u_imem_iw     |imem_iw      |    99|
 |15    |      u_pcadd4      |adder        |    36|
 |16    |      u_pcaddbranch |adder_0      |    19|
 |17    |      u_rf          |regfile      |    78|
 +------+--------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 556 ; free virtual = 7891
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.922 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2117.930 ; gain = 714.023 ; free physical = 575 ; free virtual = 7861
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.785 ; gain = 705.836 ; free physical = 554 ; free virtual = 7890
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 2121.793 ; gain = 705.836 ; free physical = 554 ; free virtual = 7890
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2120.891 ; gain = 0.000 ; free physical = 861 ; free virtual = 8147
-INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2124.754 ; gain = 0.000 ; free physical = 549 ; free virtual = 7888
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 6 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2209.699 ; gain = 0.000 ; free physical = 825 ; free virtual = 8112
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2212.594 ; gain = 0.000 ; free physical = 767 ; free virtual = 8120
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 46 instances were transformed.
+  A total of 14 instances were transformed.
   RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
   RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
-  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
 
-Synth Design complete | Checksum: eef24d8f
+Synth Design complete | Checksum: ccf1bdc1
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+65 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 2209.734 ; gain = 829.648 ; free physical = 828 ; free virtual = 8115
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1779.385; main = 1480.268; forked = 376.986
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3114.547; main = 2209.703; forked = 996.621
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2233.711 ; gain = 0.000 ; free physical = 828 ; free virtual = 8115
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 2212.629 ; gain = 809.555 ; free physical = 767 ; free virtual = 8120
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1727.611; main = 1428.751; forked = 356.896
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3118.410; main = 2212.598; forked = 996.621
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2236.605 ; gain = 0.000 ; free physical = 767 ; free virtual = 8120
 INFO: [Common 17-1381] The checkpoint '/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.runs/synth_1/top_module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jun 25 14:58:50 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 11 21:03:23 2025...

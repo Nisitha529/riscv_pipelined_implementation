@@ -121,6 +121,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/utils_1/imports/synth_1/top_module.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
