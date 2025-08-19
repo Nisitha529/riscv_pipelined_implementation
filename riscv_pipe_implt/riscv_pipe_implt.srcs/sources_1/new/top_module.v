@@ -29,10 +29,10 @@ module top_module (
     .readdatam   (readdatam_w)
   );
 
-//  imem imem_inst (
-//    .a  (pcf),
-//    .rd (instrf)
-//  );
+  imem imem_inst (
+    .a  (pcf),
+    .rd (instrf)
+  );
 
   dmem dmem_inst (
     .clk   (clk),
