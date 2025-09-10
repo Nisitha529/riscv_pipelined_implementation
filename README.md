@@ -44,9 +44,40 @@ Interfaces with data memory for load/store operations. Reads or writes data at c
 ### Write Back (WB) Stage
 Finalizes instruction execution by writing results back to the register file. Selects between ALU output and memory data using the MemToReg signal and writes to the destination register. This stage ensures data correctness for dependent instructions.
 
----
+## Key Modules
 
-## Hazard Handling
+### Core Processing Units
+- pc_module.v: Program counter management with sequential and branch updates
+- instruction_memory.v: ROM for instruction storage
+- controller.v: Main control unit for instruction decoding
+- regfile.v: 32-register file with dual read ports and single write port
+- alu.v: Arithmetic Logic Unit supporting RISC-V operations
+- dmem.v: Data memory for load/store operations
+
+### Pipeline registers
+- if_id.v: IF to ID stage interface registers
+- id_ex.v: ID to EX stage interface registers
+- ex_mem.v: EX to MEM stage interface registers
+- mem_wb.v: MEM to WB stage interface registers
+
+### Hazard detection and forwarding
+- hazardunit.v: Detects data and control hazards, manages stalls and forwarding
+- mux2.v, mux3.v, mux4.v: Multiplexers for operand selection and forwarding
+
+### Support modules
+- extend.v: Immediate value sign-extension unit
+- flopr.v: Register with reset functionality
+- flopenr.v: Register with enable and reset control
+
+## Features
+### Complete RV32I implementation
+- Implements base integer instruction set including:
+   - Arithmetic operations (ADD, SUB, AND, OR, XOR, SLT)
+   - Immediate variants (ADDI, ANDI, ORI, XORI, SLTI)
+   - Load/Store instructions (LW, SW)
+   - Control flow instructions (BEQ, BNE, JAL)
+
+### Hazard Handling
 
 - **Data hazards** (RAW):
   - Handled using forwarding/bypassing paths
@@ -56,6 +87,10 @@ Finalizes instruction execution by writing results back to the register file. Se
 
 ---
 
+<img width="1105" height="434" alt="Linter_layout" src="https://github.com/user-attachments/assets/5fc4cd4e-ca57-4959-9bf5-1e7b4f59fe61" />
+
+
+<!--
 ## Performance
 
 - Ideal **CPI = 1**, under pipeline conditions :contentReference.  
@@ -74,3 +109,5 @@ Finalizes instruction execution by writing results back to the register file. Se
 4. **Monitor outputs**:
    - PC, register file contents, memory interface  
    - Insert test programs to verify hazard handling and correct execution
+-->
+
