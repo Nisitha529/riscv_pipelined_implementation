@@ -89,6 +89,12 @@ Finalizes instruction execution by writing results back to the register file. Se
 
 <img width="1105" height="434" alt="Linter_layout" src="https://github.com/user-attachments/assets/5fc4cd4e-ca57-4959-9bf5-1e7b4f59fe61" />
 
+## Verification
+The implementation includes testbenches for:
+- Module-level functionality verification
+- Pipeline hazard handling tests
+- Instruction set compliance checking
+- End-to program execution validation
 
 <!--
 ## Performance
