@@ -1,9 +1,11 @@
 module c_iex_im(
   input             clk,
   input             reset,
+  
   input             regwritee,
   input             memwritee,
   input       [1:0] resultsrce,
+  
   output reg        regwritem,
   output reg        memwritem,
   output reg  [1:0] resultsrcm
@@ -14,8 +16,7 @@ module c_iex_im(
       regwritem   <= 0;
       memwritem   <= 0;
       resultsrcm  <= 0;
-    end
-    else begin
+    end else begin
       regwritem   <= regwritee;
       memwritem   <= memwritee;
       resultsrcm  <= resultsrce;

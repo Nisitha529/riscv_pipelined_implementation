@@ -1,8 +1,10 @@
 module c_im_iw(
   input             clk,
   input             reset,
+  
   input             regwritem,
   input       [1:0] resultsrcm,
+  
   output reg        regwritew,
   output reg  [1:0] resultsrcw
 );
@@ -11,8 +13,7 @@ module c_im_iw(
     if (reset) begin
       regwritew   <= 0;
       resultsrcw  <= 0;
-    end
-    else begin
+    end else begin
       regwritew   <= regwritem;
       resultsrcw  <= resultsrcm;
     end

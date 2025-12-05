@@ -1,8 +1,10 @@
 module alu(
   input      [31:0] srca,
   input      [31:0] srcb,
+  
   input      [3:0]  alucontrol,
   output reg [31:0] aluresult,
+  
   output            zero,
   output            sign
 );

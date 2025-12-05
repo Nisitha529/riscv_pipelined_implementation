@@ -1,22 +1,33 @@
 module controller(
   input        clk,
   input        reset,
+  
   input  [6:0] op,
+  
   input  [2:0] funct3d,
   input        funct7b5,
+  
   input        zeroe,
   input        signe,
+  
   input        flushe,
+  
   output       resultsrce0,
   output [1:0] resultsrcw,
+  
   output       memwritem,
+  
   output       pcjalsrce,
   output       pcsrce,
+  
   output       alusrcae,
   output [1:0] alusrcbe,
+  
   output       regwritem,
   output       regwritew,
+  
   output [2:0] immsrcd,
+  
   output [3:0] alucontrole
 );
 
@@ -31,14 +42,19 @@ module controller(
 
   maindec md (
     .op         (op),
+    
+    .regwrite   (regwrited),
     .resultsrc  (resultsrcd),
+    
     .memwrite   (memwrited),
     .branch     (branchd),
+    
     .alusrca    (alusrcad),
     .alusrcb    (alusrcbd),
-    .regwrite   (regwrited),
+    
     .jump       (jumpd),
     .immsrc     (immsrcd),
+    
     .aluop      (aluopd)
   );
 
@@ -54,22 +70,32 @@ module controller(
     .clk         (clk),
     .reset       (reset),
     .clear       (flushe),
+    
     .regwrited   (regwrited),
     .memwrited   (memwrited),
+    
     .jumpd       (jumpd),
     .branchd     (branchd),
+    
     .alusrcad    (alusrcad),
     .alusrcbd    (alusrcbd),
+    
     .resultsrcd  (resultsrcd),
+    
     .alucontrold (alucontrold),
     .funct3d     (funct3d), 
+    
     .regwritee   (regwritee),
     .memwritee   (memwritee),
+    
     .jumpe       (jumpe),
     .branche     (branche),
+    
     .alusrcae    (alusrcae),
     .alusrcbe    (alusrcbe),
+    
     .resultsrce  (resultsrce),
+    
     .alucontrole (alucontrole),
     .funct3e     (funct3e) 
   );
@@ -77,9 +103,11 @@ module controller(
   c_iex_im pipreg_e_to_m (
     .clk         (clk),
     .reset       (reset),
+    
     .regwritee   (regwritee),
     .memwritee   (memwritee),
     .resultsrce  (resultsrce),
+    
     .regwritem   (regwritem),
     .memwritem   (memwritem),
     .resultsrcm  (resultsrcm)
@@ -88,16 +116,18 @@ module controller(
   c_im_iw pipreg_m_to_w (
     .clk         (clk),
     .reset       (reset),
+    
     .regwritem   (regwritem),
     .resultsrcm  (resultsrcm),
+    
     .regwritew   (regwritew),
     .resultsrcw  (resultsrcw)
   );
 
   assign resultsrce0  = resultsrce[0];
-  assign zeroop       = zeroe ^ funct3e[0];
-  assign signop       = signe ^ funct3e[0];
-  assign branchop     = funct3e[2] ? signop : zeroop;
+  assign zeroop       = zeroe ^ funct3d[0];
+  assign signop       = signe ^ funct3d[0];
+  assign branchop     = funct3d[2] ? signop : zeroop;
   assign pcsrce       = (branche & branchop) | jumpe;
   assign pcjalsrce    = (op == 7'b1100111) ? 1'b1 : 1'b0;
 

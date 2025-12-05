@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Simulation ended after 200 cycles without errors.
+Test finished. Total errors: 0
+$finish called at time : 2015 ns : File "/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sim_1/new/tb_datapath.v" Line 147

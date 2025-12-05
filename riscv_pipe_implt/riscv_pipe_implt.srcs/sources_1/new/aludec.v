@@ -3,6 +3,7 @@ module aludec(
   input  [2:0]   funct3,
   input  [0:0]   funct7b5,
   input  [1:0]   aluop,
+  
   output [3:0]   alucontrol
 );
 

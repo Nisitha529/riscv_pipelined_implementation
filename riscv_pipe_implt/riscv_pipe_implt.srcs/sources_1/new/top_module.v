@@ -2,8 +2,8 @@ module top_module (
   input         clk,
   input         reset,
   
-  input  [31:0] instrf,
-  output [31:0] pcf,
+//  input  [31:0] instrf,
+//  output [31:0] pcf,
   output [31:0] readdatam,
   
   output [31:0] writedatam,
@@ -11,8 +11,8 @@ module top_module (
   output        memwritem
 );
 
-//  wire [31:0] pcf;
-//  wire [31:0] instrf;
+  wire [31:0] pcf;
+  wire [31:0] instrf;
   wire [31:0] readdatam_w;
   
   assign readdatam = readdatam_w;

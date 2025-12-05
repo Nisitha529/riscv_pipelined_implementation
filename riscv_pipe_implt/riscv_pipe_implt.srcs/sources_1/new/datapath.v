@@ -46,7 +46,7 @@ module datapath(
   mux2 u_jal_r(
     .d0       (pctargete),
     .d1       (aluresulte),
-    .s        (pcjalsrcm),
+    .s        (pcjalsrce),
     .y        (branjumptargete)
   );
 

@@ -11,9 +11,7 @@
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source top_module.tcl -notrace
-WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
-WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
-create_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1340.809 ; gain = 126.836 ; free physical = 1227 ; free virtual = 5420
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1340.180 ; gain = 103.836 ; free physical = 4262 ; free virtual = 11653
 Command: read_checkpoint -auto_incremental -incremental /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt.srcs/utils_1/imports/synth_1/top_module.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,10 +23,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
-INFO: [Synth 8-7075] Helper process launched with PID 141981
+INFO: [Synth 8-7075] Helper process launched with PID 124556
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1823.125 ; gain = 410.598 ; free physical = 412 ; free virtual = 4605
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1823.496 ; gain = 410.598 ; free physical = 3129 ; free virtual = 10642
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
 INFO: [Synth 8-6157] synthesizing module 'riscv_module' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:1]
@@ -74,7 +71,6 @@ INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/media/nisitha/M
 INFO: [Synth 8-6155] done synthesizing module 'riscv_module' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/riscv_module.v:1]
 INFO: [Synth 8-6157] synthesizing module 'imem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'imem' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:1]
-WARNING: [Synth 8-6104] Input port 'instrf' has an internal driver [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:34]
 INFO: [Synth 8-6157] synthesizing module 'dmem' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/dmem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'dmem' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/dmem.v:1]
 INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
@@ -110,10 +106,10 @@ WARNING: [Synth 8-7129] Port instr[2] in module extend is either unconnected or 
 WARNING: [Synth 8-7129] Port instr[1] in module extend is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instr[0] in module extend is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1901.062 ; gain = 488.535 ; free physical = 293 ; free virtual = 4489
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1900.465 ; gain = 487.566 ; free physical = 3049 ; free virtual = 10547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1918.875 ; gain = 506.348 ; free physical = 298 ; free virtual = 4496
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1918.277 ; gain = 505.379 ; free physical = 3129 ; free virtual = 10612
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -121,10 +117,10 @@ Start Loading Part and Timing Information
 Loading part: xc7z010clg400-1
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1926.879 ; gain = 514.352 ; free physical = 298 ; free virtual = 4496
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1926.281 ; gain = 513.383 ; free physical = 3127 ; free virtual = 10610
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1943.793 ; gain = 531.266 ; free physical = 266 ; free virtual = 4469
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1943.195 ; gain = 530.297 ; free physical = 3085 ; free virtual = 10571
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -174,7 +170,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:58 . Memory (MB): peak = 2114.348 ; gain = 701.820 ; free physical = 174 ; free virtual = 4343
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2115.758 ; gain = 702.859 ; free physical = 3087 ; free virtual = 10547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -188,6 +184,10 @@ ROM: Preliminary Mapping Report
 |imem        | ram        | 128x8         | LUT            | 
 |imem        | ram        | 128x8         | LUT            | 
 |imem        | ram        | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
+|top_module  | p_0_out    | 128x8         | LUT            | 
 +------------+------------+---------------+----------------+
 
 
@@ -208,7 +208,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 177 ; free virtual = 4332
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3073 ; free virtual = 10541
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -229,7 +229,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 202 ; free virtual = 4359
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3091 ; free virtual = 10551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -247,108 +247,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4359
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3114 ; free virtual = 10551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4359
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3114 ; free virtual = 10551
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[0] with 1st driver pin 'instrf_IBUF[0]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[0] with 2nd driver pin 'imem_inst/instrd[0]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[1] with 1st driver pin 'instrf_IBUF[1]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[1] with 2nd driver pin 'imem_inst/instrd[1]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[2] with 1st driver pin 'instrf_IBUF[2]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[2] with 2nd driver pin 'imem_inst/instrd[2]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[3] with 1st driver pin 'instrf_IBUF[3]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[3] with 2nd driver pin 'imem_inst/instrd[3]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[4] with 1st driver pin 'instrf_IBUF[4]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[4] with 2nd driver pin 'imem_inst/instrd[4]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[5] with 1st driver pin 'instrf_IBUF[5]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[5] with 2nd driver pin 'imem_inst/instrd[5]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[6] with 1st driver pin 'instrf_IBUF[6]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[6] with 2nd driver pin 'imem_inst/instrd[6]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[7] with 1st driver pin 'instrf_IBUF[7]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[7] with 2nd driver pin 'imem_inst/instrd[7]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[16] with 1st driver pin 'instrf_IBUF[16]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[16] with 2nd driver pin 'imem_inst/instrd[16]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[17] with 1st driver pin 'instrf_IBUF[17]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[17] with 2nd driver pin 'imem_inst/instrd[17]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[18] with 1st driver pin 'instrf_IBUF[18]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[18] with 2nd driver pin 'imem_inst/instrd[18]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[19] with 1st driver pin 'instrf_IBUF[19]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[19] with 2nd driver pin 'imem_inst/instrd[19]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[20] with 1st driver pin 'instrf_IBUF[20]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[20] with 2nd driver pin 'imem_inst/instrd[20]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[21] with 1st driver pin 'instrf_IBUF[21]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[21] with 2nd driver pin 'imem_inst/instrd[21]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[22] with 1st driver pin 'instrf_IBUF[22]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[22] with 2nd driver pin 'imem_inst/instrd[22]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[23] with 1st driver pin 'instrf_IBUF[23]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[23] with 2nd driver pin 'imem_inst/instrd[23]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[8] with 1st driver pin 'instrf_IBUF[8]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[8] with 2nd driver pin 'instrd[8]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[9] with 1st driver pin 'instrf_IBUF[9]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[9] with 2nd driver pin 'instrd[9]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[10] with 1st driver pin 'instrf_IBUF[10]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[10] with 2nd driver pin 'instrd[10]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[11] with 1st driver pin 'instrf_IBUF[11]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[11] with 2nd driver pin 'instrd[11]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[12] with 1st driver pin 'instrf_IBUF[12]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[12] with 2nd driver pin 'instrd[12]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[13] with 1st driver pin 'instrf_IBUF[13]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[13] with 2nd driver pin 'instrd[13]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[14] with 1st driver pin 'instrf_IBUF[14]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[14] with 2nd driver pin 'instrd[14]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[15] with 1st driver pin 'instrf_IBUF[15]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[15] with 2nd driver pin 'instrd[15]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[24] with 1st driver pin 'instrf_IBUF[24]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[24] with 2nd driver pin 'instrd[24]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[25] with 1st driver pin 'instrf_IBUF[25]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[25] with 2nd driver pin 'instrd[25]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[26] with 1st driver pin 'instrf_IBUF[26]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[26] with 2nd driver pin 'instrd[26]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[27] with 1st driver pin 'instrf_IBUF[27]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[27] with 2nd driver pin 'instrd[27]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[28] with 1st driver pin 'instrf_IBUF[28]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[28] with 2nd driver pin 'instrd[28]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[29] with 1st driver pin 'instrf_IBUF[29]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[29] with 2nd driver pin 'instrd[29]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[30] with 1st driver pin 'instrf_IBUF[30]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[30] with 2nd driver pin 'instrd[30]_i_2/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[31] with 1st driver pin 'instrf_IBUF[31]_inst/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/top_module.v:1]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin instrf_IBUF[31] with 2nd driver pin 'instrd[31]_i_5/O' [/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt/riscv_pipe_implt.srcs/sources_1/new/imem.v:6]
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|       32|Failed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4359
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3118 ; free virtual = 10554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4359
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3118 ; free virtual = 10554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4358
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3117 ; free virtual = 10554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4358
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3117 ; free virtual = 10554
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -366,72 +295,69 @@ Report Cell Usage:
 +------+----------+------+
 |1     |BUFG      |     1|
 |2     |CARRY4    |    36|
-|3     |LUT1      |    25|
-|4     |LUT2      |   226|
-|5     |LUT3      |   142|
-|6     |LUT4      |    98|
-|7     |LUT5      |   274|
-|8     |LUT6      |   413|
-|9     |MUXF7     |     1|
-|10    |RAM256X1S |    32|
-|11    |RAM32M    |    10|
-|12    |RAM32X1D  |     4|
-|13    |FDCE      |   512|
-|14    |IBUF      |    34|
-|15    |OBUF      |   129|
+|3     |LUT1      |     3|
+|4     |LUT2      |   194|
+|5     |LUT3      |   127|
+|6     |LUT4      |   112|
+|7     |LUT5      |   223|
+|8     |LUT6      |   436|
+|9     |RAM256X1S |    32|
+|10    |RAM32M    |    10|
+|11    |RAM32X1D  |     4|
+|12    |FDCE      |   518|
+|13    |IBUF      |     2|
+|14    |OBUF      |    97|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+--------------------+-------------+------+
 |      |Instance            |Module       |Cells |
 +------+--------------------+-------------+------+
-|1     |top                 |             |  1937|
+|1     |top                 |             |  1795|
 |2     |  dmem_inst         |dmem         |    32|
-|3     |  imem_inst         |imem         |    16|
-|4     |  rv                |riscv_module |  1724|
-|5     |    controller_01   |controller   |   132|
-|6     |      pipreg_d_to_e |c_id_iex     |   125|
-|7     |      pipreg_e_to_m |c_iex_im     |     4|
-|8     |      pipreg_m_to_w |c_im_iw      |     3|
-|9     |    datapath_01     |datapath     |  1592|
-|10    |      u_alu         |alu          |    12|
-|11    |      u_id_iex      |id_iex       |   611|
-|12    |      u_iex_imem    |iex_imem     |   297|
-|13    |      u_if          |flopenr      |   161|
-|14    |      u_if_id       |if_id        |   219|
-|15    |      u_imem_iw     |imem_iw      |   159|
-|16    |      u_pcadd4      |adder        |    36|
-|17    |      u_pcaddbranch |adder_0      |    19|
-|18    |      u_rf          |regfile      |    78|
+|3     |  rv                |riscv_module |  1662|
+|4     |    controller_01   |controller   |   102|
+|5     |      pipreg_d_to_e |c_id_iex     |    95|
+|6     |      pipreg_e_to_m |c_iex_im     |     4|
+|7     |      pipreg_m_to_w |c_im_iw      |     3|
+|8     |    datapath_01     |datapath     |  1560|
+|9     |      u_alu         |alu          |    12|
+|10    |      u_id_iex      |id_iex       |   767|
+|11    |      u_iex_imem    |iex_imem     |   118|
+|12    |      u_if          |flopenr      |   179|
+|13    |      u_if_id       |if_id        |   216|
+|14    |      u_imem_iw     |imem_iw      |   135|
+|15    |      u_pcadd4      |adder        |    36|
+|16    |      u_pcaddbranch |adder_0      |    19|
+|17    |      u_rf          |regfile      |    78|
 +------+--------------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 181 ; free virtual = 4358
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3117 ; free virtual = 10554
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 64 critical warnings and 34 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.285 ; gain = 707.758 ; free physical = 180 ; free virtual = 4358
-Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2120.293 ; gain = 707.758 ; free physical = 180 ; free virtual = 4357
+Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.695 ; gain = 708.797 ; free physical = 3117 ; free virtual = 10554
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2121.703 ; gain = 708.797 ; free physical = 3117 ; free virtual = 10554
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2123.254 ; gain = 0.000 ; free physical = 453 ; free virtual = 4631
-INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2124.664 ; gain = 0.000 ; free physical = 3399 ; free virtual = 10837
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2213.094 ; gain = 0.000 ; free physical = 450 ; free virtual = 4617
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2213.504 ; gain = 0.000 ; free physical = 3329 ; free virtual = 10795
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 46 instances were transformed.
   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
   RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
   RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
 
-Synth Design complete | Checksum: e87fb62d
+Synth Design complete | Checksum: 55d5e015
 INFO: [Common 17-83] Releasing license: Synthesis
-63 Infos, 36 Warnings, 64 Critical Warnings and 0 Errors encountered.
+63 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:26 . Memory (MB): peak = 2213.129 ; gain = 810.508 ; free physical = 423 ; free virtual = 4607
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1899.449; main = 1630.697; forked = 414.191
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3116.910; main = 2213.098; forked = 996.621
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2237.105 ; gain = 0.000 ; free physical = 424 ; free virtual = 4608
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:56 . Memory (MB): peak = 2213.539 ; gain = 810.547 ; free physical = 3330 ; free virtual = 10797
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1715.758; main = 1412.594; forked = 356.527
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3118.332; main = 2213.508; forked = 996.633
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2237.516 ; gain = 0.000 ; free physical = 3330 ; free virtual = 10797
 INFO: [Common 17-1381] The checkpoint '/media/nisitha/My_Passport/MOODLE/Vivado_projects/Pipelined_RISCv/riscv_pipe/riscv_pipelined_implt/riscv_pipe_implt.runs/synth_1/top_module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 19 17:48:32 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 21 10:59:19 2025...

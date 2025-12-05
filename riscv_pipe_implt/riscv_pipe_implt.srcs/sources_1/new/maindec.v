@@ -1,13 +1,18 @@
 module maindec(
   input  [6:0]  op,
+  
   output        regwrite,
   output [1:0]  resultsrc,
+  
   output        memwrite,
   output        branch,
+  
   output        alusrca,
   output [1:0]  alusrcb,
+  
   output        jump,
   output [2:0]  immsrc,
+  
   output [1:0]  aluop
 );
 
