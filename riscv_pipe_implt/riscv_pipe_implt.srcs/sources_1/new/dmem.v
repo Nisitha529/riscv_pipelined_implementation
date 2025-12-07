@@ -6,7 +6,7 @@ module dmem(
   output [31:0] rd
 );
 
-  reg [31:0] ram [255:0];  // 64 x 32-bit memory
+  reg [31:0] ram [255:0];  // 256 x 32-bit memory
   
   // Initialize all memory locations to zero
 //  integer i;

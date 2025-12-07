@@ -1,19 +1,26 @@
 module hazardunit(
   input      [4:0] rs1d,
   input      [4:0] rs2d,
+  
   input      [4:0] rs1e,
   input      [4:0] rs2e,
+  
   input      [4:0] rde,
   input      [4:0] rdm,
   input      [4:0] rdw,
+  
   input            regwritem,
   input            regwritew,
+  
   input            resultsrce0,
   input            pcsrce,
+  
   output reg [1:0] forwardae,
   output reg [1:0] forwardbe,
+  
   output           stalld,
   output           stallf,
+  
   output           flushd,
   output           flushe
 );
